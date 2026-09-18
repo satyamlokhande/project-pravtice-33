@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator-shell">
+    <section class="calculator" aria-label="Calculator">
+      <header class="calculator-header">
+        <div class="brand-mark" aria-hidden="true">+</div>
+        <div>
+          <p class="eyebrow">Everyday math</p>
+          <h1>Calculator</h1>
+        </div>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle color theme">☼</button>
+      </header>
+
+      <div class="display" aria-live="polite">
+        <div class="expression" id="expression">Ready</div>
+        <div class="result" id="result">0</div>
+      </div>
+
+      <div class="keypad">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="backspace" aria-label="Backspace">⌫</button>
+        <button class="key utility" data-value="%">%</button>
+        <button class="key operator" data-value="/">÷</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="*">×</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="-">−</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key operator" data-value="+">+</button>
+
+        <button class="key zero" data-value="0">0</button>
+        <button class="key" data-value=".">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+
+      <p class="keyboard-hint">Tip: use your keyboard to calculate faster</p>
+    </section>
+  </main>
+  <script src="logic.js"></script>
+</body>
+</html>
